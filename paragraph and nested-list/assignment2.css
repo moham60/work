@@ -1,0 +1,4 @@
+p{
+    background-color: red;
+    display: inline;/*don't have width and height this make color in the text only*/
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Frame</title>
+</head>
+<body>
+    <h1>Child Frame</h1>
+     <!-- target self make url open in the same frame here will open in the same frame  -->
+    <a href="https://example.com" target="_self">Open in the same frame</a><br>
+      <!-- target parent make url open in the parent frame here will open in parent.html in spereated frame but in the same tab -->
+    <a href="https://example.com" target="_parent">Open in the parent frame</a>
+
+<!-- Opens the linked document in the full body of the window, replacing all frames.
+It will remove all framesets and iframes and load the link in the entire window, as if the frames never existed.-->
+    <a href="https://example.com" target="_top">Open in the topmost frame</a>
+
+          <!-- target blank make url open in new tab -->
+          <a href="https://www.facebook.com/" target="_blank">open in new tab</a>
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+  
+    padding-block: 15px;/*padding top and bottom 15px */
+   
+}
+li{
+    text-transform: capitalize;/*make first letter uppercase */
+}
+hr{
+   background-color: red;/*change background color*/
+   height: 3px;/*change height of horzintal line*/
+  
+}
+
+table{
+   border-spacing: 0; /* delete space beteween each cells */
+}
+table tr td,th{
+    border: 1px solid black;
+   
+    padding: 10px; /*padding 10px in all directions for each cells*/
+}
+.nested-table td
+{
+    border-color: blue;/* change border-color of nested table*/
+}
+
+.container.last{
+    background-image: url("pxfuel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* it make background image as large as possible, Some 
+    parts of the background image may not be in view*/
+    background-position: center;
+
+    height: 100vh;
+    width: 100vw; /*100% from viewport */
+}
+.container.last2{
+    margin-top: 50px;
+    background-image: url("pxfuel.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;/* it make background image to large size that cover the width and heigth of the content area of image */
+    background-position: center;/*position the image in center according to x and y axis*/
+    height:100vh;
+
+}
+.container.image.flex{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;/*if width is completed the image break in new line*/
+    justify-content: center;/* images come to center*/
+}
+.container.image.flex .image
+{/*width and height of the div that contain image*/
+    width: 350px;
+    height: 250px;
+}
+.container.image.flex .image img
+{/*the image have 100% width from the parent*/
+    width: 100%;
+  
+    border-radius: 15px;
+    transition: 0.4s ease;/*transition of transformation the duration 0.4s and timing function ease*/
+}
+.container.image.flex .image img:hover
+,.container.image.grid .image img:hover{
+    /*when hover the image become scale up to 1.2 from the real image*/
+        transform: scale(1.2);
+}
+
+
+
+.container.image.grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    /* repeat columns and each img has 350px width and fill full width if there are width 
+    */
+    gap: 10px;
+   
+}
+.container.image.grid .image img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+@media(max-width:448px) 
+{
+    .container.image.grid .image img
+    {
+        width: 80%; /*80% from the width of parent */
+        display: block;/*conver inline img to block to respect margin */
+       margin-left: auto;
+       margin-right: auto;
+       /* margin from left and right auto to make img in the center */
+    }
+    
+}
+
+
+
+/* Styling for the header section */
+.header {
+    background-color: yellow;  /* Sets the background color of the header to yellow */
+    color: white;  /* Sets the text color in the header to white */
+    text-align: center;  /* Centers the text in the header */
+    padding: 10px;  /* Adds 10px padding inside the header */
+}
+
+/* Styling for the navigation bar */
+.nav {
+    background-color: rgb(29, 211, 5);  /* Sets the background color of the nav bar to green */
+    padding: 8px;  /* Adds 8px padding inside the nav bar */
+}
+
+/* Styling for the unordered list inside the navigation bar */
+.nav ul {
+    list-style: none;  /* Removes the default bullet points from the list */
+    display: flex;  /* Displays the list items in a row */
+    justify-content: center;  /* Centers the list items horizontally */
+}
+
+/* Styling for the list items inside the navigation bar */
+.nav ul li {
+    margin: 0 25px;  /* Adds 25px margin to the left and right of each list item */
+}
+
+/* Styling for the anchor tags inside the list items */
+.nav ul li a {
+    text-decoration: none;  /* Removes the default underline from the links */
+    font-size: 25px;  /* Sets the font size of the links to 25px */
+    color: black;  /* Sets the text color of the links to black */
+}
+
+/* Styling for the anchor tags on hover */
+.nav ul li a:hover {
+    color: red;  /* Changes the text color of the links to red when hovered over */
+}
+
+/* Styling for the section container */
+.section {
+    height: 100vh;  /* Sets the height of the section to 100% of the viewport height */
+    display: flex;  /* Displays the section as a flex container */
+    width: 100%;  /* Sets the width of the section to 100% */
+}
+
+/* Styling for the aside element inside the section */
+.section .aside {
+    border: 2px solid black;  /* Adds a 2px solid black border around the aside */
+    flex-basis: 15%;  /* Sets the initial size of the aside to 15% of the section */
+}
+
+/* Styling for the iframe inside the aside element */
+.section .aside .iframe {
+    margin: 10px;  /* Adds 10px margin outside the iframe */
+    padding: 10px;  /* Adds 10px padding inside the iframe */
+    border-bottom: 2px solid;  /* Adds a 2px solid border at the bottom of the iframe */
+  
+}
+
+/* Styling for the social icons container inside the aside element */
+.section .aside .social-icons {
+    text-align: center;  /* Centers the content inside the social icons container */
+}
+
+/* Styling for the h1 elements inside the social icons container */
+.section .aside .social-icons h1 {
+    margin: 20px 0;  /* Adds 20px margin to the top and bottom of the h1 elements */
+}
+
+/* Styling for the anchor tags inside the social icons container */
+.section .aside .social-icons a {
+    display: block;  /* Displays the anchor tags as block elements */
+}
+
+/* Styling for the content element inside the section */
+.section .content {
+    border: 2px solid red;  /* Adds a 2px solid red border around the content */
+    flex-basis: 60%;  /* Sets the initial size of the content to 60% of the section */
+}
+
+/* Styling for the h1 elements inside the content element */
+.section .content h1 {
+    text-align: center;  /* Centers the h1 elements inside the content */
+    margin: 10px 0;  /* Adds 10px margin to the top and bottom of the h1 elements */
+}
+
+/* Styling for the form inside the content element */
+.section .content form {
+    border: 2px solid;  /* Adds a 2px solid border around the form */
+    height: 80%;  /* Sets the height of the form to 80% of the content element */
+    display: flex;  /* Displays the form as a flex container */
+    flex-direction: column;  /* Arranges the form's children in a column */
+    justify-content: center;  /* Centers the form's children vertically */
+}
+
+/* Styling for the input elements inside the form */
+.section .content form input {
+    display: block;  /* Displays the input elements as block elements */
+    width: 80%;  /* Sets the width of the input elements to 80% */
+    margin: 10px auto;  /* Adds 10px margin to the top and bottom and centers horizontally */
+    padding: 10px;  /* Adds 10px padding inside the input elements */
+    border-radius: 5px;  /* Rounds the corners of the input elements by 5px */
+    outline: none;  /* Removes the default outline from the input elements */
+    border: 1px solid;  /* Adds a 1px solid border around the input elements */
+}
+
+/* Styling for the submit button inside the form */
+.section .content form input[type="submit"] {
+    border: none;  /* Removes the border from the submit button */
+    background-color: blue;  /* Sets the background color of the submit button to blue */
+    color: white;  /* Sets the text color of the submit button to white */
+    cursor: pointer;  /* Changes the cursor to a pointer when hovering over the button */
+    transition: 0.4s ease;  /* Adds a transition effect to the button */
+}
+
+/* Styling for the submit button on hover */
+.section .content form input[type="submit"]:hover {
+    transform: scale(1.1);  /* Scales the button by 1.1 times when hovered over */
+}
+
+/* Styling for the input elements on focus */
+.section .content form input:focus {
+    border-color: rgb(64, 192, 192);  /* Changes the border color of the input elements when focused */
+}
+
+/* Styling for the space element inside the section */
+.section .space {
+    flex-basis: 15%;  /* Sets the initial size of the space to 15% of the section */
+    border: 2px solid rgb(0, 17, 255);  /* Adds a 2px solid blue border around the space */
+    display: flex;  /* Displays the space as a flex container */
+    flex-direction: column;  /* Arranges the space's children in a column */
+}
+
+/* Styling for the white element inside the space */
+.section .space .white {
+    flex-basis: 5%;  /* Sets the initial size of the white element to 5% of the space */
+    background-color: white;  /* Sets the background color of the white element to white */
+}
+
+/* Styling for the center element inside the space */
+.section .space .center {
+    flex-basis: 47.5%;  /* Sets the initial size of the center element to 47.5% of the space */
+    background-color: #ddd;  /* Sets the background color of the center element to light gray */
+    border-bottom: 2px solid;  /* Adds a 2px solid border at the bottom of the center element */
+}
+
+/* Styling for the bottom element inside the space */
+.section .space .bottom {
+    flex-basis: 47.5%;  /* Sets the initial size of the bottom element to 47.5% of the space */
+    background-color: #ddd;  /* Sets the background color of the bottom element to light gray */
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: green;  /* Sets the background color of the footer to green */
+    text-align: center;  /* Centers the text in the footer */
+    padding: 10px;  /* Adds 10px padding inside the footer */
+}
+
+/*all <h1> elements on the page, except for those within specific forms inside a .contact class.
+   Specifically, it excludes <h1> elements that are within a form with the .opinion, .kind, or .marital-status class,
+   all of which are themselves within an element with the .contact class. This ensures that styling rules applied to
+   this selector will not affect those particular <h1> elements. */
+h1:not(.contact form .opinion h1,.contact form .kind h1,.contact form .marital-status h1){
+    color: blue;
+    text-align: center;
+   
+}
+input:not(input[type="radio"]){ /* all input has display block except input radio */
+    display: block;
+    margin: 10px 0;
+}
+
+

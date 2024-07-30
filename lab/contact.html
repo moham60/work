@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assignment.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact">
+        <!-- Form that submits data to thank.html -->
+        <form action="thank.html">
+            
+            <!-- Input field for the user's name, required field -->
+            <input type="text" placeholder="YourName" required>
+            
+            <div class="opinion">
+                <!-- Section for user opinion with a heading -->
+                <h1>Your Opinion on my Website</h1>
+                
+                <!-- Radio buttons for opinion options -->
+                <input type="radio" name="m">              
+                <label for="">good</label>
+                
+                <input type="radio" name="m">
+                <label for="">very good</label>
+                
+                <input type="radio" name="m">
+                <label for="">fair</label>      
+            </div>
+            
+            <div class="kind">
+                <!-- Section for user gender with a heading -->
+                <h1>Your gender is</h1>
+                
+                <!-- Radio buttons for gender options -->
+                <input type="radio" name="k">
+                <label for="">male</label>
+                
+                <input type="radio" name="k">
+                <label for="">female</label> 
+            </div>
+            
+            <div class="marital-status">
+                <!-- Section for marital status with a heading -->
+                <h1>Marital status</h1>
+                
+                <!-- Dropdown menu for selecting marital status -->
+                <select name="" id="">
+                    <option selected>single</option>
+                    <option>married</option>
+                    <option>student</option>
+                </select>
+            </div>
+            
+            <!-- Input field for the user's email address -->
+            <input type="email" placeholder="Enter Your Email" required>      <!-- required input --> 
+                
+            <!-- Input field for the subject -->
+            <input type="text" placeholder="Subject" required><!-- required input -->
+            
+            <!-- Textarea for additional comments, with fixed size -->
+            <textarea name="" id="" style="resize: none;" rows="4" cols="50"></textarea>
+            
+            <!-- Submit button to submit the form -->
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
