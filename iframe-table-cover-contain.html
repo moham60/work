@@ -64,56 +64,85 @@
                 </tr>
               </tbody>
             </table>
-        <hr>
+    
        </div>
        <div class="container">
         <!-- Container div to hold the table -->
         <table>
+           <thead>
+           
+                <tr>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                   
+                </tr>
+          
+           </thead>
             <!-- Main table -->
-            <tr>
-                <!-- First row of the main table -->
-                <td>table 1</td>
-                <!-- First cell of the first row -->
-                <td>
-                    <!-- Second cell of the first row containing a nested table -->
-                    <table class="nested-table">
-                        <!-- Nested table in the second cell of the first row -->
-                        <caption>table 1</caption>
-                        <!-- Caption for the nested table -->
-                        <tr>
-                            <!-- First row of the nested table -->
-                            <td>table 2</td>
-                            <!-- First cell of the first row of the nested table -->
-                            <td>table 2</td>
-                            <!-- Second cell of the first row of the nested table -->
-                        </tr>
-                        <tr>
-                            <!-- Second row of the nested table -->
-                            <td>table 2</td>
-                            <!-- First cell of the second row of the nested table -->
-                            <td>table 2</td>
-                            <!-- Second cell of the second row of the nested table -->
-                        </tr>
-                    </table>
-                    <!-- End of nested table -->
-                </td>
-            </tr>
-            <tr>
-                <!-- Second row of the main table -->
-                <td>table 1</td>
-                <!-- First cell of the second row -->
-                <td>
-                    table 1
-                    <!-- Second cell of the second row -->
-                </td>
-            </tr>
+             <tbody>
+                <tr>
+                    <!-- First row of the main table -->
+                    <td>table 1</td>
+                    <!-- First cell of the first row -->
+                    <td>
+                        <!-- Second cell of the first row containing a nested table -->
+                        <table class="nested-table">
+                            <!-- Nested table in the second cell of the first row -->
+                            <caption>table 2</caption>
+                            <!-- Caption for the nested table -->
+                             <thead><!--header of table2-->
+                                <tr>
+                                    <th>head-table2</th>
+                                    <th>head-table2</th>
+                                </tr>
+                             </thead>
+                             <tbody> <!--body of table2-->
+                                <tr>
+                                    <!-- First row of the nested table -->
+                                    <td>Nested Row 1, Cell 1</td>
+                                    <!-- First cell of the first row of the nested table -->
+                                    <td>Nested Row 1, Cell 2</td>
+                                    <!-- Second cell of the first row of the nested table -->
+                                </tr>
+                                <tr>
+                                    <!-- Second row of the nested table -->
+                                    <td>Nested Row 2, Cell 1</td>
+                                    <!-- First cell of the second row of the nested table -->
+                                    <td>Nested Row 2, Cell 2</td>
+                                    <!-- Second cell of the second row of the nested table -->
+                                </tr>
+                             </tbody>
+                            
+                        </table>
+                        <!-- End of nested table -->
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Second row of the main table -->
+                    <td>table 1</td>
+                    <!-- First cell of the second row -->
+                    <td>
+                        table 1
+                        <!-- Second cell of the second row -->
+                    </td>
+                </tr>
+             </tbody><!--body of table -->
+             
+             <tfoot>
+                <tr>
+                    <td>table footer</td>
+                    <td>table footer</td>
+                </tr>
+             </tfoot>
         </table>
         <!-- End of main table -->
-        <hr>
+     
         <!-- Horizontal rule to separate sections -->
     </div>
-      <div class="cover"></div>
-    <hr>
+ 
+
+    <div class="cover"></div>
+  
     <div class="contain"></div>
 </body>
 </html>
